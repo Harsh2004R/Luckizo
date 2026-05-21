@@ -7,7 +7,7 @@ import {
     verifyPlayerController,
     createPlayerController
 }
-    from "../Controller/Player.controller.js"
+    from "../Controller/player.controller.js"
 
 
 const PlayerRouter = express.Router();

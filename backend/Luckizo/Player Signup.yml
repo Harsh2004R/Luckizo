@@ -1,0 +1,23 @@
+info:
+  name: Player Signup
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8001/api/v1/player/signup
+  body:
+    type: json
+    data: |-
+      {
+        "phone":8193082622,
+        "email":"honey@gmail.com",
+        "password":"Honey@8080"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

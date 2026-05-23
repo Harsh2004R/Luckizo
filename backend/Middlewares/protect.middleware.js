@@ -9,12 +9,13 @@ const protectMiddleware = (req, res, next) => {
     });
   }
   try {
-    const decoded = jwt.verify(token, ACCESS_SECRET);
+    const decoded = jwt.verify(token, process.env.ACCESS_SECRET);
     if (!decoded) {
       return res.status(401).json({
         message: `Token is either curropt or fake ... `,
       });
     }
+    req.user = decoded;
     next();
   } catch (error) {
     return res.status(401).json({

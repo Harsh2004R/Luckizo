@@ -112,7 +112,7 @@ export const verifyPlayerController = async (req, res) => {
 export const getAllPlayerController = async (req, res) => {
   try {
     const allPlayers = await PlayerModel.find()
-      .select("-password -refreshToken")
+      .select("-password -refreshToken -phone -profile")
       .lean();
     return res.status(200).json({
       message: "All Players list here...",

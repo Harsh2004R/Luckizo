@@ -12,8 +12,7 @@ import roleMiddleware from "../Middlewares/role.middleware.js";
 
 const PlayerRouter = express.Router();
 
-
-// get single player info
+// Get Single Player info Route ...
 PlayerRouter.get(
   "/player/:id/info",
   protectMiddleware,
@@ -21,6 +20,7 @@ PlayerRouter.get(
   getPlayerInfoController,
 );
 
+// Get All Player List | Data | info Route ...
 PlayerRouter.get(
   "/player/get/all",
   protectMiddleware,
@@ -28,15 +28,26 @@ PlayerRouter.get(
   getAllPlayerController,
 );
 
+// Player Signup Route ...
 PlayerRouter.post("/player/signup", createPlayerController);
+
+// Player Login Route ...
 PlayerRouter.post("/player/login", verifyPlayerController);
 
+// Player Delete Route ...
 PlayerRouter.delete(
   "/player/:id",
   protectMiddleware,
   roleMiddleware("admin"),
   deleteSinglePlayerController,
 );
-PlayerRouter.patch("/player/:id", editPlayerController);
+
+// Player Profile Edit Route ...
+PlayerRouter.patch(
+  "/player/:id",
+  protectMiddleware,
+  roleMiddleware("player"),
+  editPlayerController,
+);
 
 export default PlayerRouter;

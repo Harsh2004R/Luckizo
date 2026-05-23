@@ -1,6 +1,6 @@
 // import "./App.css";
 import { Container, ScrollArea, Box } from "@chakra-ui/react";
-import AllRoutes from "../Routes/AllRoutes";
+import AllRoutes from "../src/Routes/AllRoutes";
 function App() {
   return (
     <Container

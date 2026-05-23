@@ -1,5 +1,10 @@
 import { createRoot } from "react-dom/client";
 // import "./index.css";
+import { Provider as ChakraProvider } from "../src/components/ui/provider.jsx";
 import App from "./App.jsx";
 
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <ChakraProvider>
+    <App />
+  </ChakraProvider>,
+);

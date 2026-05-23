@@ -1,5 +1,6 @@
 // import "./App.css";
 import { Container, ScrollArea, Box } from "@chakra-ui/react";
+import AllRoutes from "../Routes/AllRoutes";
 function App() {
   return (
     <Container
@@ -37,6 +38,7 @@ function App() {
         >
           <ScrollArea.Content spaceY="4">
             {/* Scroll Container ..... */}
+            <AllRoutes />
           </ScrollArea.Content>
         </ScrollArea.Viewport>
       </ScrollArea.Root>

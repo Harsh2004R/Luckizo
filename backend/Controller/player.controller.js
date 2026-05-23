@@ -44,15 +44,17 @@ export const createPlayerController = async (req, res) => {
 // signup Player controller ...
 export const verifyPlayerController = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, phone, password } = req.body;
 
-    if (!email || !password) {
+    if ((!email && !phone) || !password) {
       return res
         .status(401)
         .json({ message: "phone|email|password is missing ..." });
     }
 
-    const player = await PlayerModel.findOne({ email });
+    const player = await PlayerModel.findOne({
+      $or: [{ email }, { phone }],
+    }).select("+password");
     if (!player) {
       return res.status(401).json({
         message: "Player not found in database ...",

@@ -1,0 +1,49 @@
+/* All Headings related fonts here ..... */
+
+@font-face {
+  font-family: "heading";
+  src: url("./Fonts/Heading/Roboto-Bold.ttf") format("truetype");
+}
+
+/* All Body related fonts here ..... */
+
+@font-face {
+  font-family: "body-1";
+  src: url("./Fonts/Body/ubuntu-font-family-0.80/Ubuntu-C.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "body-2";
+  src: url("./Fonts/Body/ubuntu-font-family-0.80/UbuntuMono-R.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "body-header";
+  src: url("./Fonts/Body/ubuntu-font-family-0.80/UbuntuMono-B.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "body-regular";
+  src: url("./Fonts/Body/ubuntu-font-family-0.80/Ubuntu-R.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "body-thin";
+  src: url("./Fonts/Body/ubuntu-font-family-0.80/Ubuntu-L.ttf")
+    format("truetype");
+}
+
+/* All caption related fonts here ..... */
+
+@font-face {
+  font-family: "caption-thin";
+  src: url("./Fonts/caption/Nunito-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "caption-light";
+  src: url("./Fonts/caption/Nunito-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "caption-regular";
+  src: url("./Fonts/caption/Nunito-Regular.ttf") format("truetype");
+}

@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../App/Pages/Home";
+import Login from "../App/Pages/Login";
 function AllRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<div>Login</div>} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }

@@ -9,6 +9,7 @@ function Caption({
   fontWeight = "400",
   mt = "5px",
   letterSpacing = "0.4px",
+  fontFamily="caption-thin",
 
   ...props
 }) {
@@ -19,6 +20,7 @@ function Caption({
       color={color}
       fontWeight={fontWeight}
       mt={mt}
+      fontFamily={fontFamily}
       letterSpacing={letterSpacing}
       {...props}
     >

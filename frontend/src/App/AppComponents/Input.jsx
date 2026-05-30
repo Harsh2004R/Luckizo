@@ -8,8 +8,12 @@ function Input({
     fontSize: "12px",
     fontFamily: "caption-thin",
   },
+  fontFamily = "body-1",
+  fontSize = "sm",
   w = "full",
   h = { base: "38px", md: "40px", lg: "40px" },
+  py="18px",
+  my="3px",
   ...props
 }) {
   return (
@@ -20,11 +24,13 @@ function Input({
       placeholder={placeholder}
       variant={varient}
       type={type}
+      fontFamily={fontFamily}
       bgColor={"transparent"}
+      fontSize={fontSize}
+      py={py}
+      my={my}
       {...props}
-    >
-      
-    </ChakraInput>
+    ></ChakraInput>
   );
 }
 

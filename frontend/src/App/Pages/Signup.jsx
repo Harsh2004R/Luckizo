@@ -28,7 +28,7 @@ function Signup() {
         flexDirection={"column"}
         justifyContent={"center"}
         w="100%"
-        p={{ base: "10", md: "16", lg: "18" }}
+        py={{ base: "10px", md: "16px", lg: "18px" }}
         minH="auto"
         // border="1px solid lime"
       >
@@ -40,8 +40,7 @@ function Signup() {
             md: "none",
             lg: "none",
           }}
-          pt="20px"
-          pb="20px"
+          py="10px"
           // border={ "1px solid #7070703e"}
           flexDirection={"column"}
           borderRadius={"lg"}

@@ -8,6 +8,7 @@ function Header({
   mt = "10px",
   mb = "10px",
   textAlign = "center",
+  letterSpacing="0.5px",
   ...props
 }) {
   return (
@@ -18,6 +19,7 @@ function Header({
       size={size}
       color={color}
       fontFamily={fontFamily}
+      letterSpacing={letterSpacing}
       {...props}
     >
       {children}

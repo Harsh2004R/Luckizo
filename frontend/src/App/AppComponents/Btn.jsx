@@ -23,7 +23,9 @@ function Btn({
   bgColor = "#178eea",
   borderRadius = "sm",
   fontFamily = "caption-regular",
+   transition="0.35s ease",
   fontSize="14px",
+  _hover={bgColor:"#0972c2"},
   ...props
 }) {
   return (
@@ -40,6 +42,8 @@ function Btn({
       mt={mt}
       p={p}
       fontSize={fontSize}
+      _hover={_hover}
+      transition={transition}
       {...props}
     >
       {children}

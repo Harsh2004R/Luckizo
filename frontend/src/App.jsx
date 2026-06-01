@@ -7,14 +7,15 @@ function App() {
     <Container p="0" m="0" bg="#19191d" w="100%" minH="100vh">
       <Container
         // border={"1px solid tomato"}
+        borderRight={"1px solid #ffffff1e"}
+        borderLeft={"1px solid #ffffff1e"}
         maxWidth={{ base: "100%", md: "md", lg: "xl" }}
         minH="100vh"
         py="1vh"
-        px="0px"
+        px="10px"
         bg="#19191d"
       >
-       
-       <AllRoutes />
+        <AllRoutes />
       </Container>
     </Container>
   );

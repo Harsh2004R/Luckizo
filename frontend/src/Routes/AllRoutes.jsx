@@ -4,11 +4,13 @@ import Home from "../App/Pages/Home";
 import Login from "../App/Pages/Login";
 import Signup from "../App/Pages/Signup";
 import Otp from "../App/Pages/Otp";
+import Profile from "../App/Pages/Profile";
 function AllRoutes() {
   return (
     <Routes>
       <Route element={<NavigationLayout />}>
         <Route path="/" element={<Home />} />
+         <Route path="/profile" element={<Profile />} />
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />

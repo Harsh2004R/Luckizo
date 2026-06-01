@@ -4,6 +4,18 @@ const colors = {
   caption_text_color: "grey",
   caption_warning: "yellow.500",
   header_color: "#dadada",
+  
+
+
+
+
+
+
+
+
+
+
+
 
   // navbar colors ... variations
   // default

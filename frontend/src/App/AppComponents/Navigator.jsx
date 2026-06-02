@@ -33,7 +33,7 @@ function Navigator() {
   return (
     <Box
       position="fixed"
-      bottom="15px"
+      bottom="5px"
       left="50%"
       transform="translateX(-50%)"
       w={{ base: "95%", md: "500px" }}

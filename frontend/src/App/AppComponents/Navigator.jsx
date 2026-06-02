@@ -1,5 +1,5 @@
 import { Box, HStack, VStack, Text } from "@chakra-ui/react";
-import { FaGamepad, FaCrown, FaGift, FaUser } from "react-icons/fa";
+import { FaGamepad, FaCrown, FaGift, FaUser ,FaHome} from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import colors from "../../Constants/colors";
 
@@ -7,9 +7,9 @@ const theme = colors.navbar_theme;
 
 const navItems = [
   {
-    label: "Games",
-    icon: FaGamepad,
-    path: "/games",
+    label: "Home",
+    icon: FaHome,
+    path: "/",
   },
   {
     label: "VIP",

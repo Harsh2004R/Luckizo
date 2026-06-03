@@ -1,12 +1,7 @@
 import React from "react";
 import { HStack, Text, VStack, Icon } from "@chakra-ui/react";
 
-import {
-  FaCompass,
-  FaDice,
-  FaFutbol,
-  FaTrophy,
-} from "react-icons/fa";
+import { FaCompass, FaDice, FaFutbol, FaTrophy } from "react-icons/fa";
 function TopBar() {
   const categories = [
     { name: "Explore", icon: FaCompass },
@@ -16,10 +11,11 @@ function TopBar() {
   ];
   return (
     <HStack
+      // border="1px solid white"
       overflowX="auto"
-      gap="8"
-      px="4"
-      py="3"
+      gap="5px"
+      px="2"
+      py="2"
       bg="whiteAlpha.50"
       css={{
         "&::-webkit-scrollbar": {
@@ -28,12 +24,14 @@ function TopBar() {
       }}
     >
       {categories.map((item) => (
-        <VStack key={item.name} minW="70px">
-          <Icon size="lg">
+        <VStack _hover={{cursor:"pointer"}} key={item.name} minW="70px">
+          <Icon color="white.100" filter="drop-shadow(0 0 8px gold)" size="sm">
             <item.icon />
           </Icon>
 
-          <Text fontFamily={"body-1"} fontSize="sm">{item.name}</Text>
+          <Text fontFamily={"body-1"} fontSize="11px">
+            {item.name}
+          </Text>
         </VStack>
       ))}
     </HStack>

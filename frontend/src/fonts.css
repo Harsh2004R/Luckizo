@@ -47,3 +47,10 @@
   font-family: "caption-regular";
   src: url("./Fonts/caption/Nunito-Regular.ttf") format("truetype");
 }
+
+/* Money or numeric fonts... */
+
+@font-face {
+  font-family: "number";
+  src: url("./Fonts/caption/Nunito-Regular.ttf") format("truetype");
+}

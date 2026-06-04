@@ -5,6 +5,7 @@ import {
   Field,
   Text,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import colors from "../../Constants/colors";
 import Header from "../AppComponents/Header.jsx";
@@ -25,7 +26,21 @@ function Login() {
     reset();
   };
   return (
-    <>
+    <Center
+      w="full"
+      // border="1px solid lime"
+      minH="98vh"
+      flexDirection={"column"}
+      background="
+    linear-gradient(
+      135deg,
+      #0F172A 0%,
+      #1E293B 25%,
+      #222222 65%,
+      #FF4655 100%
+    )
+  "
+    >
       <Header>Login</Header>
       <Container
         display={"flex"}
@@ -34,11 +49,11 @@ function Login() {
         w="100%"
         p={{ base: "10", md: "16", lg: "18" }}
         minH="auto"
-        // border="1px solid lime"
       >
         <Center
           w="100%"
           py="10px"
+          flexDirection="column"
           minH="auto"
           border={{
             base: "1px solid #7070703e",
@@ -111,7 +126,12 @@ function Login() {
                 type="password"
                 placeholder={"Your password"}
               />
-              <Caption fontWeight="bold" m="auto" color={colors.caption_warning} w="200px">
+              <Caption
+                fontWeight="bold"
+                m="auto"
+                color={colors.caption_warning}
+                w="200px"
+              >
                 {errors.password?.message}
               </Caption>
             </Field.Root>
@@ -119,9 +139,17 @@ function Login() {
               Login
             </Btn>
           </form>
+          <Caption
+            textDecoration="underline"
+            _hover={{ cursor: "pointer" }}
+            mt="10px"
+            fontWeight="600"
+          >
+            <Link to="/signup">Create New Account </Link>
+          </Caption>
         </Center>
       </Container>
-    </>
+    </Center>
   );
 }
 

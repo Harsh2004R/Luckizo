@@ -21,8 +21,22 @@ function Signup() {
   };
 
   return (
-    <>
-      <Header>Signup</Header>
+    <Center
+      w="full"
+      // border="1px solid lime"
+      minH="98vh"
+      flexDirection={"column"}
+      background="
+    linear-gradient(
+      135deg,
+      #0F172A 0%,
+      #1E293B 25%,
+      #222222 65%,
+      #FF4655 100%
+    )
+  "
+    >
+      <Header mb="50px">Signup</Header>
       <Container
         display={"flex"}
         flexDirection={"column"}
@@ -161,7 +175,7 @@ function Signup() {
           </Caption>
         </Center>
       </Container>
-    </>
+    </Center>
   );
 }
 

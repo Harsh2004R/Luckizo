@@ -108,12 +108,13 @@ function Profile() {
             w="full"
             minH="auto"
             bg="linear-gradient(135deg,#222222,#0F172A,#222222 ,#FF4655)"
-            p={{ base: "16px", md: "30px" }}
+            p={{ base: "10px", md: "10px" }}
           >
             <Flex
-              maxW="1400px"
+              maxW="100%"
               mx="auto"
               gap="14px"
+              // border="1px solid red"
               direction={{ base: "column", lg: "column" }}
             >
               <Box

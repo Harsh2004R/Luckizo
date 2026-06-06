@@ -4,7 +4,7 @@ import AllRoutes from "../src/Routes/AllRoutes";
 
 function App() {
   return (
-    <Container p="0" m="0" bg="#19191d" w="100%" minH="100vh">
+    <Container p="0" mx="auto" bg="#19191d" w="100%" minH="100vh">
       <Container
         // border={"1px solid tomato"}
         borderRight={"1px solid #ffffff1e"}

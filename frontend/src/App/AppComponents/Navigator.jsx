@@ -12,6 +12,11 @@ const navItems = [
     path: "/",
   },
   {
+    label: "Game",
+    icon: FaGamepad,
+    path: "/games",
+  },
+  {
     label: "VIP",
     icon: FaCrown,
     path: "/vip",

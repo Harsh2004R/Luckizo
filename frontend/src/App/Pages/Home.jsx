@@ -1,17 +1,9 @@
-import {
-  Box,
-  Flex,
-  Text,
-  Image,
-  HStack,
-  Badge,
-  Icon,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Badge, SimpleGrid } from "@chakra-ui/react";
 import Header from "../PageComponents/Header.jsx";
 
 import TopBar from "../PageComponents/TopBar.jsx";
 import Banner from "../PageComponents/Banner.jsx";
+import LazyImage from "../AppComponents/LazyImage.jsx";
 function Home() {
   const recentlyPlayed = [
     {
@@ -126,10 +118,18 @@ function Home() {
               overflow="hidden"
               bg="linear-gradient(135deg,#0F172A,#FF4655,#222222 ,#222222)"
             >
-              <Image
+              {/* <Image
                 src={game.image}
                 h={{ base: "100px", md: "110px", lg: "120px" }}
                 w="100%"
+                objectFit="cover"
+              /> */}
+
+              <LazyImage
+                src={game.image}
+                h={{ base: "100px", md: "110px", lg: "120px" }}
+                w="100%"
+                skeletonHeight={{ base: "100px", md: "110px", lg: "120px" }}
                 objectFit="cover"
               />
 
@@ -197,11 +197,19 @@ function Home() {
               >
                 🔥 HOT
               </Badge>
-              <Image
+              {/* <Image
                 src={game.image}
                 h={{ base: "100px", md: "110px", lg: "120px" }}
                 w="100%"
                 objectFit="cover"
+              /> */}
+
+              <LazyImage
+                src={game.image}
+                h={{ base: "100px", md: "110px", lg: "120px" }}
+                w="100%"
+                objectFit="cover"
+                skeletonHeight={{ base: "100px", md: "110px", lg: "120px" }}
               />
 
               <Box p="3">

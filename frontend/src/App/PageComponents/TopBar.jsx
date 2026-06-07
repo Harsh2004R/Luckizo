@@ -18,7 +18,6 @@ function TopBar() {
       py="2"
       w="100%"
       bg="whiteAlpha.50"
-      // boxShadow={"rgba(190, 190, 190, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;"}
       css={{
         "&::-webkit-scrollbar": {
           display: "none",

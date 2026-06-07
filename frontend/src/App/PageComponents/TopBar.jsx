@@ -11,12 +11,14 @@ function TopBar() {
   ];
   return (
     <HStack
-      // border="1px solid white"
+      border="1px solid white"
       overflowX="auto"
       gap="5px"
       px="2"
       py="2"
-      bg="whiteAlpha.50"
+      w="100%"
+      // bg="whiteAlpha.100"
+      boxShadow={"rgba(190, 190, 190, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;"}
       css={{
         "&::-webkit-scrollbar": {
           display: "none",
